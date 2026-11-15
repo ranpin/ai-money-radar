@@ -1,0 +1,83 @@
+{
+  "site": {
+    "name": "AI Money Radar",
+    "name_zh": "AI 变现情报库",
+    "tagline": "持续扫描「用 AI 赚钱」的每一个真实信号",
+    "description": "追踪 AI 变现的案例、产品、打法与收入主张，每条数据带证据分级与口径标注。每日更新。",
+    "base_url": "https://ranpin.github.io/ai-money-radar/",
+    "repo": "https://github.com/ranpin/ai-money-radar",
+    "lab_repo": "https://github.com/ranpin/ai-monetization-lab",
+    "updated": "2026-11-15",
+    "disclaimer": "站内数据仅供研究参考，不构成投资建议或收入承诺。所有收入数字均为公开主张，未经独立审计。"
+  },
+  "evidence_grades": {
+    "A": {
+      "label": "A·独立可核验",
+      "desc": "权利人公开且可验证的交易/财务资料",
+      "limit": "不等于审计"
+    },
+    "B": {
+      "label": "B·本人披露",
+      "desc": "本人原帖/官网/访谈自述",
+      "limit": "无法单凭自述确认真实性与成本"
+    },
+    "C": {
+      "label": "C·第三方转述",
+      "desc": "媒体报道/二手摘要",
+      "limit": "与本人原话冲突时以直接披露为准"
+    },
+    "D": {
+      "label": "D·无收入证据",
+      "desc": "账号/产品可研究，但无收入数字",
+      "limit": "禁止宣传「年入百万/千万」"
+    }
+  },
+  "caliber_rules": [
+    "含工资的收入不能写作「自媒体变现」",
+    "多年累计 ≠ 年入",
+    "单月 ×12 ≠ 全年",
+    "MRR / ARR 是经常性估计，≠ 已到账现金",
+    "公司营收 ≠ 老板个人净赚",
+    "采访标题 ≠ 本人原话",
+    "严禁拿曝光量 / 点赞 / 粉丝数乘任意系数估算他人营业收入"
+  ],
+  "headline": {
+    "date": "2026-11-15",
+    "title": "全库 29 位中文 X 创作者、14 条收入主张，无一条达到 A 级独立可核验证据",
+    "summary": "开源案例库 AIPMAndy/chinese-x-creators 于 2026-11-04 核查后明确：「目前公开数据不存在本研究已独立认证的个人年净所得千万级样本。」所有「千万级」都是公司营收、历史营收、采访标题或 ARR，不是个人净收入，且几乎都无法归因到 X 平台。",
+    "href": "insights.html",
+    "tag": "证据基线"
+  },
+  "key_findings": [
+    {
+      "title": "X 几乎从不直接产生收入",
+      "body": "14 条收入主张里，X 归因标为「本人明确归因」的只有 2 条（余温、鱼总聊 AI），其余全是 unknown / 无法量化 / 未建立。X 是信任与获客前端，钱来自产品、商单、社群、咨询、返佣。",
+      "href": "insights.html#attribution"
+    },
+    {
+      "title": "客单价决定你是否需要先有流量",
+      "body": "3~5 万元/项目的企业交付一年只需 10~20 个客户；399 元/永久的社群需要数千粉。没有流量的人不应该从低客单价起步。",
+      "href": "plays.html"
+    },
+    {
+      "title": "平台分成这条路已换代",
+      "body": "X 原 Creator Revenue Sharing 已于 2026 年 9 月结束，改为 Original Content Rewards。别把平台分成当商业模式的地基。",
+      "href": "news.html"
+    },
+    {
+      "title": "卖代码模板在贬值，卖问责/社群在升值",
+      "body": "Marc Lou 的 ShipFast（Next.js 样板代码）跌到 $897/mo，而「30 天发布否则去死」的社群 Ship or Die 涨到 $16,422/mo。",
+      "href": "cases.html#marc-lou"
+    },
+    {
+      "title": "情绪触发比干货本身重要 40 倍",
+      "body": "余温本人 A/B 对照：同一份干货，他发 2.6 万浏览，别人加了情绪钩子发 100 万+。他的结论是「能让人停下来互动的内容现在推特最牛逼的内容」。",
+      "href": "plays.html#content"
+    },
+    {
+      "title": "「开源 → 付费」闭环真实存在",
+      "body": "案例库把这一类全标为「付费闭环未证实」，但 weijunext 官网明确写着 Nexty.dev 100 天内从零到 90 位付费客户。",
+      "href": "cases.html#weijunext"
+    }
+  ]
+}

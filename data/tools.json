@@ -1,0 +1,260 @@
+[
+  {
+    "id": "cursor",
+    "name": "Cursor",
+    "category": "AI 编程",
+    "url": "https://cursor.com/pricing",
+    "pricing": [
+      {"tier": "Free", "price": "$0"},
+      {"tier": "Plus", "price": "$8/月"},
+      {"tier": "Premium", "price": "$30/月"},
+      {"tier": "Super", "price": "$100/月"},
+      {"tier": "Ultra", "price": "$200/月"}
+    ],
+    "annual_note": "年付 $80/$300/$1000/$2000",
+    "affiliate": null,
+    "public_mrr": null,
+    "pricing_asof": "2026-11-15",
+    "evidence": "一手（官方定价页）",
+    "notes": "第三方模型按 API list price 另计；额度每周刷新。"
+  },
+  {
+    "id": "claude-code",
+    "name": "Claude Code",
+    "category": "AI 编程",
+    "url": "https://claude.com",
+    "pricing": [
+      {"tier": "Claude Pro", "price": "$20/月"},
+      {"tier": "Max 5x", "price": "$100/月"},
+      {"tier": "Max 20x", "price": "$200/月"}
+    ],
+    "affiliate": null,
+    "public_mrr": null,
+    "pricing_asof": "2026-11-15",
+    "evidence": "二手（多源一致，官方定价页被证书链拦截）",
+    "notes": "⚠️ Team Standard $20/seat 不含 Claude Code；订阅不含 API credits。"
+  },
+  {
+    "id": "codesome",
+    "name": "CodeSome（Claude 低价月包）",
+    "category": "AI 编程·中转",
+    "url": null,
+    "pricing": [{"tier": "月包", "price": "289 元/月"}],
+    "affiliate": null,
+    "public_mrr": null,
+    "pricing_asof": "2026-11-15",
+    "evidence": "一手转录（余温长文）",
+    "notes": "「每天 30 美金额度，一个月 900 美金」。余温自述与老板见过面、「确实是有反代，但不会掺假」。⚠️ 第三方中转有封号/掺假风险。配套：AigoCode、PackyAPI（按量）、CC-Switch（一键切换）、RelayPulse（测评站）。"
+  },
+  {
+    "id": "lovable",
+    "name": "Lovable",
+    "category": "AI 建站",
+    "url": "https://lovable.dev/pricing",
+    "pricing": [
+      {"tier": "Free", "price": "$0（5 build credits/天，月上限 30）"},
+      {"tier": "Pro", "price": "from $25/月（100 credits）"},
+      {"tier": "Business", "price": "from $50/月"}
+    ],
+    "affiliate": null,
+    "public_mrr": null,
+    "pricing_asof": "2026-11-15",
+    "evidence": "混合（credit 单价一手；$25/$50 二手）",
+    "notes": "Pro $0.25/credit、Business $0.50/credit（一手）。代码与项目归用户所有（一手 FAQ）；月付 credits 2 个月过期；有学生折扣。"
+  },
+  {
+    "id": "bolt-new",
+    "name": "bolt.new",
+    "category": "AI 建站",
+    "url": "https://bolt.new/pricing",
+    "pricing": [
+      {"tier": "Free", "price": "$0（300K tokens/天、1M/月）"},
+      {"tier": "Pro", "price": "$25/月（10M tokens/月 + custom domain）"},
+      {"tier": "Teams", "price": "$30/人/月"}
+    ],
+    "affiliate": null,
+    "public_mrr": null,
+    "pricing_asof": "2026-11-15",
+    "evidence": "一手",
+    "notes": "年付省最多 28%（具体年费未渲染）。"
+  },
+  {
+    "id": "v0",
+    "name": "v0 (Vercel)",
+    "category": "AI 建站",
+    "url": "https://v0.dev/pricing",
+    "pricing": [
+      {"tier": "Free", "price": "$0（7 msg/天）"},
+      {"tier": "Plus", "price": "$30/user/月"},
+      {"tier": "Business", "price": "$100/user/月"}
+    ],
+    "affiliate": null,
+    "public_mrr": null,
+    "pricing_asof": "2026-11-15",
+    "evidence": "一手",
+    "notes": "新用户 $5 一次性 credits。Model pricing：v0 Mini $0.20/$1.20 per M(in/out)，Max Fast $10/$50。"
+  },
+  {
+    "id": "dethink",
+    "name": "DeThink",
+    "category": "GTM / SEO 数据",
+    "url": "https://dethink.ai/zh/pricing",
+    "pricing": [
+      {"tier": "体验周卡", "price": "$5 / 7 天（50 积分）"},
+      {"tier": "Pro", "price": "$20/月（200 积分）"},
+      {"tier": "进阶版", "price": "$100/月（1000 积分）"},
+      {"tier": "旗舰版", "price": "$200/月（2000 积分）"}
+    ],
+    "affiliate": null,
+    "public_mrr": null,
+    "pricing_asof": "2026-11-15",
+    "evidence": "一手（官方定价页）",
+    "notes": "余温推荐的那套 GTM 工具（强推断）。BYOK 所有套餐均不消耗积分；数据插件 ≈0.01–0.1 积分/次；卖点是不登录你的社媒账号、无封号风险。⚠️ 官网称接入 30+ 数据源但只点名 Semrush，未见 Similarweb / Ahrefs / DataForSEO。兑换码 DETHINK2026。"
+  },
+  {
+    "id": "datafast",
+    "name": "DataFast",
+    "category": "分析 / 收入归因",
+    "url": "https://datafa.st/",
+    "pricing": [
+      {"tier": "Starter", "price": "$9/月（10k events、1 站点、1 成员、3 年保留）"},
+      {"tier": "Growth", "price": "$19/月（10k events、30 站点、30 成员、5+ 年保留）"}
+    ],
+    "affiliate": "50%（最长 12 个月）",
+    "public_mrr": "$28,444/mo",
+    "users": 28297,
+    "pricing_asof": "2026-11-15",
+    "evidence": "一手（官方定价页 + 创始人公开 dashboard）",
+    "notes": "Marc Lou 产品。收入归因分析（流量 × Stripe 打通）。14 天免费试用、无需信用卡。有 MCP server + CLI，可接入 Cursor / Claude Code / Codex。Starter 定位 solo founders。"
+  },
+  {
+    "id": "zsxq",
+    "name": "知识星球",
+    "category": "付费载体·社群",
+    "url": "https://doc.zsxq.com",
+    "pricing": [
+      {"tier": "个人（年收入 ≤10 万部分）", "price": "抽成 20%"},
+      {"tier": "个人（年收入 >10 万部分）", "price": "抽成 10%"},
+      {"tier": "企业", "price": "抽成 10% / 5%"}
+    ],
+    "affiliate": null,
+    "public_mrr": null,
+    "pricing_asof": "2026-11-15",
+    "evidence": "一手",
+    "notes": "适合长期付费社群。年收入超 10 万后比小报童划算。余温的社群不走这里（微信制 399 元/永久，省掉抽成但无平台流量）。"
+  },
+  {
+    "id": "xiaobaotong",
+    "name": "小报童",
+    "category": "付费载体·专栏",
+    "url": "https://xiaobot.net",
+    "pricing": [
+      {"tier": "平台服务费", "price": "15%"},
+      {"tier": "提现到个人账户", "price": "另经第三方约 6%（不含税）"}
+    ],
+    "affiliate": null,
+    "public_mrr": null,
+    "pricing_asof": "2026-11-15",
+    "evidence": "一手",
+    "notes": "适合付费专栏/买断小册。冷启动阶段 15% < 知识星球 20%。"
+  },
+  {
+    "id": "afdian",
+    "name": "爱发电",
+    "category": "付费载体·赞助",
+    "url": "https://afdian.com",
+    "pricing": [{"tier": "平台抽成", "price": "6%（创作者得 94%）"}],
+    "affiliate": null,
+    "public_mrr": null,
+    "pricing_asof": "2026-11-15",
+    "evidence": "一手",
+    "notes": "适合粉丝赞助/订阅。"
+  },
+  {
+    "id": "lemonsqueezy",
+    "name": "Lemon Squeezy",
+    "category": "付费载体·海外",
+    "url": "https://lemonsqueezy.com",
+    "pricing": [{"tier": "每笔", "price": "5% + 50¢，$0/月"}],
+    "affiliate": null,
+    "public_mrr": null,
+    "pricing_asof": "2026-11-15",
+    "evidence": "一手",
+    "notes": "⭐ 是 MoR（Merchant of Record），代缴全球税——出海首选，省心。weijunext 的出海教程也用它。"
+  },
+  {
+    "id": "gumroad",
+    "name": "Gumroad",
+    "category": "付费载体·海外",
+    "url": "https://gumroad.com",
+    "pricing": [
+      {"tier": "直销", "price": "10% + $0.50/笔，无月费"},
+      {"tier": "Discover 市场", "price": "30%/笔"}
+    ],
+    "affiliate": null,
+    "public_mrr": null,
+    "pricing_asof": "2026-11-15",
+    "evidence": "一手",
+    "notes": "适合海外数字产品。Discover 抽成高但带流量。"
+  },
+  {
+    "id": "stripe",
+    "name": "Stripe",
+    "category": "付费载体·海外",
+    "url": "https://stripe.com/pricing",
+    "pricing": [{"tier": "新加坡区", "price": "3.4% + $0.50，国际卡 +0.5%，无月费"}],
+    "affiliate": null,
+    "public_mrr": null,
+    "pricing_asof": "2026-11-15",
+    "evidence": "一手（但仅新加坡区）",
+    "notes": "⚠️ 美国区费率未获取（被重定向到新加坡区），注册前自查。不是 MoR，需自己处理税务。"
+  },
+  {
+    "id": "jasper-affiliate",
+    "name": "Jasper（联盟计划）",
+    "category": "联盟返佣",
+    "url": null,
+    "pricing": [],
+    "affiliate": "25% 循环 12 个月（100 转化后升 30%）；每客户约 ~$177",
+    "public_mrr": null,
+    "pricing_asof": "2026-11-15",
+    "evidence": "二手多源",
+    "notes": "⚠️ Cookie 时长各来源冲突（45 天 或 14 天），结算平台（Impact/Awin/FirstPromoter）说法不一，用前需到官方 affiliate 页核实。"
+  },
+  {
+    "id": "surfer-affiliate",
+    "name": "Surfer SEO（联盟计划）",
+    "category": "联盟返佣",
+    "url": "https://surfer.ai",
+    "pricing": [],
+    "affiliate": "Tier1 75% CPA 首月 / 15% 年订阅；Tier2 100%/20%；Tier3 125%/25%",
+    "public_mrr": null,
+    "pricing_asof": "2026-11-15",
+    "evidence": "一手（surfer.ai）",
+    "notes": "Cookie 90 天。⚠️ 非循环，仅首付款。"
+  },
+  {
+    "id": "1688",
+    "name": "1688（小批量供应链）",
+    "category": "供应链",
+    "url": "https://1688.com",
+    "pricing": [],
+    "affiliate": null,
+    "public_mrr": null,
+    "pricing_asof": "2026-11-15",
+    "evidence": "混合（帮助中心一手 + 什么值得买二手）",
+    "notes": "加入「1688 严选」且开通 7 天无理由退货的商品，起批量可调到 1 件起批（一手）。有工厂把 MOQ 压到 50 件甚至更低、打样 48 小时、单价低至 0.79 元（二手）。⚠️ 手链品类具体 MOQ 未找到公开数据。实操：谈 MOQ 前先要实物打版。"
+  },
+  {
+    "id": "douyin-alliance",
+    "name": "抖音精选联盟（带货分佣）",
+    "category": "分销",
+    "url": null,
+    "pricing": [],
+    "affiliate": "10%–50%（自媒体口径）/ 5%–15%（普通账号，另一来源）",
+    "public_mrr": null,
+    "pricing_asof": "2026-11-15",
+    "evidence": "二手（两来源冲突，质量一般）",
+    "notes": "⚠️ 没找到一手官方数据，仅供量级参考。2026-07-08 起分级费率新规，不再统一 10% 扣费。佣金由平台自动结算，提现一般 1–3 个工作日到账。"
+  }
+]

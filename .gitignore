@@ -1,0 +1,20 @@
+# 构建产物（CI 会重新 build，不入库）
+dist/
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# 编辑器
+.vscode/
+.idea/
+
+# 临时
+*.tmp
+*.swp
+
+# 注意：raw/ 不忽略——由 scrape workflow 提交原始快照

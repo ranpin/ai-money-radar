@@ -1,0 +1,234 @@
+[
+  {
+    "id": "fde-enterprise-delivery",
+    "name": "企业 AI 交付 / FDE",
+    "category": "服务型",
+    "unit_price": "3~5 万元 / 项目",
+    "audience_needed": "10~20 个客户 / 年",
+    "traffic_dependent": false,
+    "startup_barrier": "低（有专业度即可接单）",
+    "ceiling": "中（卖时间，难规模化）",
+    "time_to_first_revenue": "快",
+    "representatives": ["yuwen-gkxspace", "gefei55"],
+    "evidence_grade": "B",
+    "what_you_sell": "把 AI Agent 真正接进企业生产环境——知识库 / CRM / 工单 / 权限 / 审批 / 日志 / 上线维护",
+    "why_they_pay": "买的是「能接进业务、出了问题还能继续修的交付结果」（余温原话）",
+    "acquisition": "线下跑客户（余温「线下跑了好几十家公司」）；内容只作信任背书，不是主渠道",
+    "toolchain": ["Dify", "n8n", "腾讯云 ADP 4.0", "Claude Code", "Cursor"],
+    "cost": "≈ 0，纯技术 + 交付能力",
+    "steps": [
+      "选一个明确行业，用公开业务问题整理需求与定价（Jacky Chou 法）",
+      "先完成最小页面和付费验证，再扩大开发（哥飞法）",
+      "分渠道 UTM 把 X 访问 / SEO / 私域成交分开（刘小排法）",
+      "记录前 10 个付费客户的触达来源（Damon Chen 法）"
+    ],
+    "key_insight": "「会搭 Agent 的人会越来越多。能把 Agent 交到生产环境的人，才更有机会赚到 FDE 这门生意的钱。」——AI 落地 80% 的问题不是技术，而是组织、流程、认知和决心。",
+    "risks": [
+      "卖时间，难规模化",
+      "🔴 若与本职工作领域重叠，存在竞业 / 兼职 / 知识产权风险，须先查公司政策",
+      "企业客户回款周期长、需求变更频繁"
+    ]
+  },
+  {
+    "id": "overseas-digital-product",
+    "name": "出海技术数字产品",
+    "category": "产品型",
+    "unit_price": "$9~19/月订阅 或 模板买断（几百~上千元）",
+    "audience_needed": "数千付费用户（订阅）/ 中等（模板，可靠开源资产导流）",
+    "traffic_dependent": true,
+    "traffic_dependent_note": "部分——可靠开源资产导流，不必先攒粉",
+    "startup_barrier": "高（要能开发 + 找到付费需求）",
+    "ceiling": "最高（可规模化、可被收购、睡后收入）",
+    "time_to_first_revenue": "中",
+    "representatives": ["marc-lou", "weijunext", "damonchen", "indexsy", "yihui-indie"],
+    "evidence_grade": "B",
+    "what_you_sell": "模板 / 工具 / SaaS / 数据集 / 课程——现有资产的产品化",
+    "why_they_pay": "买的是省下的时间",
+    "acquisition": "开源仓 README + Product Hunt 冷启动 + X build in public；免费开源资产做漏斗上游（weijunext 的 nextjscn.org 模式）",
+    "toolchain": ["Lovable", "bolt.new", "v0", "Cursor", "Claude Code", "Lemon Squeezy", "Gumroad"],
+    "cost": "域名 + 收款平台费率（Lemon Squeezy 5% + 50¢）",
+    "steps": [
+      "用公开评论和竞品评价收集 20 条问题表述（刘小排法）",
+      "搭单功能 MVP 测试是否有实际付费（刘小排法）",
+      "识别你的工具是否能自然展示品牌且不损伤体验（Damon Chen 法）",
+      "从第一批 10 个付费客户记录具体触达来源（Damon Chen 法）",
+      "分开统计 MRR/ARR、到账现金、退款与净利润（Damon Chen 法）"
+    ],
+    "key_insight": "Marc Lou：一个引擎多张皮——DataFast 引擎换叙事重复发布成 6 个产品。核心资产做一次，包装卖多次。⚠️ 但卖代码模板在贬值（ShipFast 跌到 $897/mo），卖问责/社群在升值（Ship or Die $16,422/mo）。",
+    "risks": [
+      "需要持续维护和客服",
+      "模板类生命周期短（ShipFast 的教训）",
+      "海外收款与税务（用 Lemon Squeezy 这类 MoR 可规避）"
+    ]
+  },
+  {
+    "id": "content-to-community",
+    "name": "垂类内容账号 → 社群/咨询",
+    "category": "内容型",
+    "unit_price": "299~399 元 / 永久社群",
+    "audience_needed": "数千粉",
+    "traffic_dependent": true,
+    "startup_barrier": "中（要持续产出可查证内容）",
+    "ceiling": "中（依赖个人时间）",
+    "time_to_first_revenue": "慢",
+    "representatives": ["yuwen-gkxspace", "ai-jasonyu", "bozhou-ai"],
+    "evidence_grade": "B",
+    "what_you_sell": "细分领域干货 + 付费答疑社群",
+    "why_they_pay": "你替他们筛了信息、给了可复制 SOP",
+    "acquisition": "小红书 / X 发「保姆级教程」长文；公众号优先（余温实测：公众号 2.6w 浏览/+900 粉 ≫ 抖音 3000/+30 ≈ 小红书 3000/+70 ≫ B 站 20 浏览/0 粉）",
+    "toolchain": ["Claude", "GPT", "Midjourney", "即梦", "知识星球", "小报童"],
+    "cost": "≈ 0–$20/月，纯时间",
+    "steps": [
+      "先换成用户听得懂的话",
+      "找 5–10 个同体量、方向相似的对标，拆开看而不是照抄",
+      "先发十条，别一直做准备",
+      "按环节复盘，不要数据差就换题",
+      "商业化靠展示价值，不是等一个粉丝数"
+    ],
+    "key_insight": "余温本人 A/B 验证：同一份干货，加情绪钩子后浏览量差 40 倍（2.6 万 vs 100 万+）。「能让人停下来互动的内容现在推特最牛逼的内容。」生产 SOP = AI 写稿 → 配 PPT → 自拍 → 加字幕 → 立刻发。",
+    "risks": [
+      "需要持续日更，见效慢",
+      "核心技术是情绪钩子，对技术型写作习惯反人性",
+      "62K 粉但大多数帖子只有个位数~两位数赞——粉丝数 ≠ 每条帖子触达",
+      "平台政策变动（X Creator Revenue Sharing 已于 2026-09 结束）"
+    ]
+  },
+  {
+    "id": "brand-sponsorship",
+    "name": "商单 / 品牌广告",
+    "category": "内容型",
+    "unit_price": "按条计价（未找到公开报价数据）",
+    "audience_needed": "需先有垂直受众",
+    "traffic_dependent": true,
+    "startup_barrier": "中",
+    "ceiling": "中（受平台波动）",
+    "time_to_first_revenue": "慢",
+    "representatives": ["ai-jasonyu", "gosailglobal", "bozhou-ai"],
+    "evidence_grade": "B",
+    "what_you_sell": "内容位 + 受众信任",
+    "why_they_pay": "触达精准垂直人群",
+    "acquisition": "先有受众，品牌主动来",
+    "toolchain": [],
+    "cost": "≈ 0",
+    "steps": [
+      "记录商单报价、实际成交、联盟佣金和平台收入四类流水（鱼总法）",
+      "用内容与商单流水创建每月漏斗表（Jason Zhu 法）"
+    ],
+    "key_insight": "余温的商单形式不是硬广，而是「踩坑→发现→教程→CTA」的长文实测软文（mem9 / 扣子2.5 / DeThink 三篇疑似商单，但镜像转载剥离了原推可能的 #ad 标注，属推断）。",
+    "risks": ["需先有粉丝量", "商单与内容公信力冲突", "报价不透明"]
+  },
+  {
+    "id": "affiliate-rebate",
+    "name": "广告 / 联盟返佣",
+    "category": "内容型",
+    "unit_price": "佣金 5%–50%（口径冲突，无官方数据）",
+    "audience_needed": "需流量",
+    "traffic_dependent": true,
+    "startup_barrier": "低-中",
+    "ceiling": "中，但合规风险高",
+    "time_to_first_revenue": "中",
+    "representatives": ["dtdt666", "yuwen-gkxspace"],
+    "evidence_grade": "B",
+    "what_you_sell": "推荐与转化",
+    "why_they_pay": "按效果付费，广告主零风险",
+    "acquisition": "内容里挂带追踪参数的链接（ref= / channel= / via=）",
+    "toolchain": ["Jasper 联盟（25% 循环 12 个月）", "Surfer SEO（Tier1 75% CPA 首月）", "DataFast（50%）"],
+    "cost": "≈ 0",
+    "steps": [
+      "研究广告声明、佣金披露和监管合规要求（SOL 案例的 action）",
+      "以真实内容分析替代夸大收益或交易引导"
+    ],
+    "key_insight": "余温实际在用的返佣链接：CREAO AI（ref=WsfbXDnK）、网易 ClawEmail（channel=gkxspace）、沉浸式翻译（via=yu-wen，配评论区抽奖送周卡）。形式是长文实测软文，不是硬广。",
+    "risks": [
+      "🔴 Web3 / 金融返佣是合规雷区（SOL 案例被库方标为合规风险最高）",
+      "佣金口径各来源冲突，无官方数据",
+      "损害内容公信力"
+    ]
+  },
+  {
+    "id": "paid-community",
+    "name": "付费社群",
+    "category": "社群型",
+    "unit_price": "299~399 元（中文）/ $16,422/mo 量级（海外，Ship or Die）",
+    "audience_needed": "需先有影响力",
+    "traffic_dependent": true,
+    "startup_barrier": "中-高（要先有影响力 + 持续运营）",
+    "ceiling": "中-高（订阅制、可复用知识）",
+    "time_to_first_revenue": "中",
+    "representatives": ["gefei55", "yuwen-gkxspace", "marc-lou"],
+    "evidence_grade": "B",
+    "what_you_sell": "经验共享 / 案例拆解 / 资源互助 / 问责制",
+    "why_they_pay": "买的是圈子和问责，不是信息",
+    "acquisition": "内容资产导流",
+    "toolchain": ["知识星球（抽成 20%/10%）", "微信群（0 抽成，如余温 399 元/永久）", "Discord"],
+    "cost": "平台抽成或 0",
+    "steps": [
+      "把社群、产品和服务分别维护转化与留存指标（哥飞法）",
+      "围绕一个持续出现的用户问题输出 10 条实测内容（泊舟法）"
+    ],
+    "key_insight": "⭐ Marc Lou 的方向性转变：卖代码模板的 ShipFast 跌到 $897/mo，而卖「30 天发布否则去死」问责制的 Ship or Die 涨到 $16,422/mo。社群卖的是问责与陪伴，不是资料。余温走微信制（399 元/永久）绕开知识星球 20% 抽成，但也放弃了平台流量与信任背书。",
+    "risks": ["冷启动需先有内容资产", "持续运营成本高", "续费率是生死线"]
+  },
+  {
+    "id": "open-source-funnel",
+    "name": "开源 → 付费（漏斗型）",
+    "category": "产品型",
+    "unit_price": "模板买断（Nexty.dev 定价未获取）",
+    "audience_needed": "中等，可靠开源资产导流",
+    "traffic_dependent": false,
+    "traffic_dependent_note": "不依赖社媒流量，依赖开源资产的自然搜索与开发者口碑",
+    "startup_barrier": "中（要已有开源资产）",
+    "ceiling": "中-高",
+    "time_to_first_revenue": "中（weijunext 100 天 90 客户）",
+    "representatives": ["weijunext", "lxfater"],
+    "evidence_grade": "B",
+    "what_you_sell": "把开源里重复出现的基础设施打包成付费模板/工具",
+    "why_they_pay": "省掉自己搭登录/支付/AI/邮件订阅的时间",
+    "acquisition": "免费开源资产（文档站、模板、周刊）+ 大量教程/翻译 → 导向付费件",
+    "toolchain": ["GitHub", "Lemon Squeezy", "Buy Me a Coffee"],
+    "cost": "≈ 0",
+    "steps": [
+      "先做免费开源资产积累流量与信任（weijunext 的 nextjscn.org 模式）",
+      "识别开源里被反复需要的基础设施，打包成付费件",
+      "Build in public：公开复盘客户数与增长"
+    ],
+    "key_insight": "案例库把「开源漏斗」三人组（铁锤人 / weijunext / indie_maker_fox）全标为 D 级「付费闭环未证实」，但 weijunext 官网明确写 Nexty.dev 100 天 0→90 付费客户——闭环真实存在，案例库标注偏保守。⚠️ 但铁锤人、indie_maker_fox 仍未验证，卡兹克被库方明确标为「高内容价值 ≠ 可证实变现」的反例。",
+    "risks": [
+      "开源影响力 ≠ 付费转化（卡兹克反例）",
+      "模板类生命周期短",
+      "需要长期维护免费资产"
+    ]
+  },
+  {
+    "id": "light-asset-ecommerce",
+    "name": "AI 轻资产电商（玄学/IP 周边）",
+    "category": "电商型",
+    "unit_price": "129 元（相邻案例：段宴同款手链）",
+    "audience_needed": "依赖投放与达人分销",
+    "traffic_dependent": true,
+    "startup_barrier": "中（要供应链谈判 + 流量投放）",
+    "ceiling": "中，风口依赖强",
+    "time_to_first_revenue": "快（余温「一周赚了十几万」）",
+    "representatives": ["yuwen-gkxspace"],
+    "evidence_grade": "B",
+    "what_you_sell": "AI 设计 + 1688 小批量生产的周边，卖情绪价值/IP 认同",
+    "why_they_pay": "情绪价值、IP 认同",
+    "acquisition": "短视频/直播带货，抖音精选联盟挂佣",
+    "toolchain": ["TikTok Creative Center（找海外爆款，免费）", "Lovable / bolt.new（AI 搭落地页，$25/月）", "1688（严选可 1 件起批）", "抖音精选联盟"],
+    "cost": "打样 + 小批量备货，几百到几千元级",
+    "steps": [
+      "从海外同类爆款获得灵感",
+      "在抖音向垂类博主打听合规性和真实需求点（不自己闷头猜）",
+      "用 AI 搭落地页",
+      "1688 对接工厂做小批量（不压货）",
+      "交给带货主播按分佣卖（自己不碰销售）"
+    ],
+    "key_insight": "🔴 当事人自己定性：「一周赚了十几万，但那基本是运气，风口一过啥也没了。」这条链路的价值在于示范「如何低成本、短周期验证一个生意」，不在于可复制的收入。",
+    "risks": [
+      "风口依赖强，不可持续",
+      "拼供应链谈判 + 流量投放，不是技术能力",
+      "带货分佣比例无官方数据（10%–50% 仅自媒体口径）",
+      "玄学品类有合规与平台审核风险"
+    ]
+  }
+]
