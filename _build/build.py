@@ -97,10 +97,13 @@ def grade_badge(g, label=None):
 
 
 def layout(title, active, body, desc=None):
-    nav_html = "".join(
-        f'<a href="{href}"{" class=\"active\"" if href == active else ""}>{e(label)}</a>'
-        for href, label in NAV
-    )
+    # 注意：class 属性预先算好再拼，避免在 f-string 表达式里用反斜杠转义引号
+    # （Python 3.11 不允许 f-string 表达式部分含反斜杠，3.12+ 才放开）
+    nav_parts = []
+    for href, label in NAV:
+        cls = ' class="active"' if href == active else ""
+        nav_parts.append(f'<a href="{href}"{cls}>{e(label)}</a>')
+    nav_html = "".join(nav_parts)
     return f"""<!DOCTYPE html>
 <html lang="zh-CN" data-theme="light">
 <head>
@@ -251,10 +254,14 @@ def build_news():
 # ---------------------------------------------------------------- 案例库
 def build_cases():
     types = ["全部"] + sorted({c["type"] for c in cases})
-    btns = "".join(
-        f'<button{" class=\"on\"" if t == "全部" else ""} data-v="{"all" if t == "全部" else e(t)}" onclick="filterBy(this,\'caselist\',\'type\')">{e(t)}</button>'
-        for t in types
-    )
+    btn_parts = []
+    for t in types:
+        cls = ' class="on"' if t == "全部" else ""
+        v = "all" if t == "全部" else e(t)
+        btn_parts.append(
+            f'<button{cls} data-v="{v}" onclick="filterBy(this,\'caselist\',\'type\')">{e(t)}</button>'
+        )
+    btns = "".join(btn_parts)
 
     cards = []
     for c in sorted(cases, key=lambda x: (x.get("evidence_grade") or "Z", x["name"])):
