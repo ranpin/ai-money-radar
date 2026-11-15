@@ -1,0 +1,100 @@
+{
+  "bolt_pricing": {
+    "bytes": 123373,
+    "date": "2026-11-15",
+    "file": "2026-11-15/bolt_pricing.html.gz",
+    "gz_bytes": 26291,
+    "sha256": "654d0769d7cb735b2c7410d5e553d132cebe2da623686d86e4d899133504f4cd"
+  },
+  "cursor_pricing": {
+    "bytes": 332593,
+    "date": "2026-11-15",
+    "file": "2026-11-15/cursor_pricing.html.gz",
+    "gz_bytes": 42616,
+    "sha256": "729b5c3b764c27d9782a669559f3d583de722c7ebb7912705a68a08557e36d4b"
+  },
+  "datafast": {
+    "bytes": 292231,
+    "date": "2026-11-15",
+    "file": "2026-11-15/datafast.html.gz",
+    "gz_bytes": 43834,
+    "sha256": "d81597ad6ac688b7f9e9d7a43051b2fb35a98566b6be84348c00e2c7a74fb8c9"
+  },
+  "hn_ai_money": {
+    "bytes": 41362,
+    "date": "2026-11-15",
+    "file": "2026-11-15/hn_ai_money.json.gz",
+    "gz_bytes": 8593,
+    "sha256": "ec83cfd5b87a1e998300420d696f651d7cd3d81db826bc7cd9a7190638c5f55b"
+  },
+  "hn_indie_revenue": {
+    "bytes": 88459,
+    "date": "2026-11-15",
+    "file": "2026-11-15/hn_indie_revenue.json.gz",
+    "gz_bytes": 20115,
+    "sha256": "5c647a0bb6f5ae8c8c0aa165bd3ab186f949e19f74dc0ca8b738b708a74f8421"
+  },
+  "hn_mrr": {
+    "bytes": 44999,
+    "date": "2026-11-15",
+    "file": "2026-11-15/hn_mrr.json.gz",
+    "gz_bytes": 11422,
+    "sha256": "11ccad877877333a1011014ebdd0b6d94ec41497b0e8700fade3a66ed200ed4f"
+  },
+  "hn_vibe_coding": {
+    "bytes": 37957,
+    "date": "2026-11-15",
+    "file": "2026-11-15/hn_vibe_coding.json.gz",
+    "gz_bytes": 9933,
+    "sha256": "18a40b6d054387160552a9dba46da0f806d1cf92f90db4d329c58819504fcaed"
+  },
+  "lovable_pricing": {
+    "bytes": 198423,
+    "date": "2026-11-15",
+    "file": "2026-11-15/lovable_pricing.html.gz",
+    "gz_bytes": 29946,
+    "sha256": "c260c55909a405512a7ac2df31acd14c65667b351be367023b4b2188dc15fa6b"
+  },
+  "marclou": {
+    "bytes": 658217,
+    "date": "2026-11-15",
+    "file": "2026-11-15/marclou.html.gz",
+    "gz_bytes": 67286,
+    "sha256": "628eec8dd0e4993a6224799a4c5d73312455653f91e28a7ce0abe75ff3de5a1a"
+  },
+  "v0_pricing": {
+    "bytes": 271995,
+    "date": "2026-11-15",
+    "file": "2026-11-15/v0_pricing.html.gz",
+    "gz_bytes": 32530,
+    "sha256": "8edd950b004ba83c37bd17fc4aa241a2a416fc73bb403887c3cbbfa079ebe0cb"
+  },
+  "weijunext": {
+    "bytes": 108649,
+    "date": "2026-11-15",
+    "file": "2026-11-15/weijunext.html.gz",
+    "gz_bytes": 19654,
+    "sha256": "81c1c7323195eb535bbf4ec307404f809445ffba21a1bad0cf66de1dea7c843b"
+  },
+  "xcreators_creators": {
+    "bytes": 73122,
+    "date": "2026-11-15",
+    "file": "2026-11-15/xcreators_creators.json.gz",
+    "gz_bytes": 14438,
+    "sha256": "cb1d9446134edc9b87feddd4aa461150831b2330d21464c19ddae13dfdfec119"
+  },
+  "xcreators_readme": {
+    "bytes": 12275,
+    "date": "2026-11-15",
+    "file": "2026-11-15/xcreators_readme.md.gz",
+    "gz_bytes": 6032,
+    "sha256": "b16cf8eb743f7bfc1326bfb6dd0900ccc744c15481302180238efe4bb6056bcd"
+  },
+  "xcreators_revenue": {
+    "bytes": 10887,
+    "date": "2026-11-15",
+    "file": "2026-11-15/xcreators_revenue.json.gz",
+    "gz_bytes": 3319,
+    "sha256": "002ef05b5e8d68042247a3c3a4d6feae737e7b3c542176d17133e072957ec5e5"
+  }
+}
