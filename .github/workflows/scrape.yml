@@ -1,0 +1,50 @@
+# 每日抓取：运行 scraper/fetch_sources.py，把 raw/ 新快照提交回仓库。
+# 全管线不调用任何 LLM——只抓取 + 原样保存 + 写 manifest。
+name: daily-scrape
+
+on:
+  schedule:
+    - cron: "30 20 * * *" # UTC 20:30 ≈ 北京时间次日 04:30，避开高峰
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: python -m pip install --quiet pyyaml
+
+      - name: Fetch sources
+        id: fetch
+        run: python scraper/fetch_sources.py
+        continue-on-error: true # 即使全部源失败，也先提交 manifest 留下失败证据，最后再让 job 变红
+
+      - name: Commit and push raw snapshots
+        run: |
+          git config user.name "ai-money-radar-bot"
+          git config user.email "ai-money-radar-bot@users.noreply.github.com"
+          git add raw/
+          if git diff --cached --quiet; then
+            echo "raw/ 无变化，跳过 commit"
+            exit 0
+          fi
+          DIR=$(ls -dt raw/2*/ | head -n1)
+          DATE=$(basename "$DIR")
+          N=$(python -c "import json,sys; print(len(json.load(open(sys.argv[1]))['sources']))" "${DIR}manifest.json" 2>/dev/null || echo "?")
+          git commit -m "scrape: ${DATE} (${N} sources)"
+          git push
+
+      - name: Fail if fetch failed
+        if: steps.fetch.outcome == 'failure'
+        run: |
+          echo "fetch_sources.py 非零退出（通常是全部来源失败），详见已提交的 manifest"
+          exit 1

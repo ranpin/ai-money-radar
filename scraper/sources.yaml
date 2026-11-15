@@ -1,0 +1,83 @@
+# ai-money-radar 抓取来源配置
+#
+# type 决定快照文件后缀：
+#   json / api — 结构化 JSON，存 <id>.json（api=在线 API，json=静态 JSON 文件）
+#   html       — 网页快照，存 <id>.html
+#   text       — 其他文本（如 README），存 <id>.<URL 原后缀>
+#
+# 不含 X/推特（反爬）、Product Hunt（需 auth）、小红书（需登录）。
+
+sources:
+  # ---- 中文 X 创作者收入案例库（结构化、持续更新）----
+  - id: xcreators_creators
+    type: json
+    url: https://raw.githubusercontent.com/AIPMAndy/chinese-x-creators/main/data/creators.json
+    desc: 中文 X 创作者收入案例库 - 创作者主表
+
+  - id: xcreators_revenue
+    type: json
+    url: https://raw.githubusercontent.com/AIPMAndy/chinese-x-creators/main/data/revenue_claims.json
+    desc: 中文 X 创作者收入案例库 - 收入声明明细表
+
+  - id: xcreators_readme
+    type: text
+    url: https://raw.githubusercontent.com/AIPMAndy/chinese-x-creators/main/README.md
+    desc: 中文 X 创作者收入案例库 - README（方法论与证据分级口径）
+
+  # ---- Hacker News Algolia 搜索（AI 变现相关讨论）----
+  - id: hn_ai_money
+    type: api
+    url: "https://hn.algolia.com/api/v1/search?query=AI%20money&tags=story&hitsPerPage=30"
+    desc: HN 搜索 - AI money
+
+  - id: hn_indie_revenue
+    type: api
+    url: "https://hn.algolia.com/api/v1/search?query=indie%20hacker%20revenue&tags=story&hitsPerPage=30"
+    desc: HN 搜索 - indie hacker revenue
+
+  - id: hn_mrr
+    type: api
+    url: "https://hn.algolia.com/api/v1/search?query=MRR&tags=story&hitsPerPage=30"
+    desc: HN 搜索 - MRR
+
+  - id: hn_vibe_coding
+    type: api
+    url: "https://hn.algolia.com/api/v1/search?query=vibe%20coding&tags=story&hitsPerPage=30"
+    desc: HN 搜索 - vibe coding
+
+  # ---- 博主个人站（HTML 快照；marclou 的 MRR 每 30 天滚动，是核心收入时间序列源）----
+  - id: marclou
+    type: html
+    url: https://marclou.com/
+    desc: Marc Lou 产品矩阵与实时 MRR（每 30 天滚动更新，核心收入时间序列源）
+
+  - id: datafast
+    type: html
+    url: https://datafa.st/
+    desc: DataFast 官网/定价
+
+  - id: weijunext
+    type: html
+    url: https://weijunext.com/
+    desc: Weijunext 博客（独立开发与出海变现实践）
+
+  # ---- 工具定价页（HTML 快照）----
+  - id: cursor_pricing
+    type: html
+    url: https://cursor.com/pricing
+    desc: Cursor 定价页
+
+  - id: lovable_pricing
+    type: html
+    url: https://lovable.dev/pricing
+    desc: Lovable 定价页
+
+  - id: bolt_pricing
+    type: html
+    url: https://bolt.new/pricing
+    desc: Bolt.new 定价页
+
+  - id: v0_pricing
+    type: html
+    url: https://v0.dev/pricing
+    desc: v0 定价页

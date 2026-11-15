@@ -53,6 +53,11 @@ cd dist && python3 -m http.server 8000
 
 抓取源：GitHub 案例库（`AIPMAndy/chinese-x-creators`）、Hacker News Algolia API、博主个人站、工具定价页。不可达源（X / Product Hunt / 小红书）不尝试。
 
+**抓取的已知限制**：
+- 快照 gzip 压缩 + 内容哈希去重（`raw/state.json`），内容没变不落新文件，仓库体积只在内容真变时增长。
+- 少数 JS 壳页面（lovable/bolt/v0 定价页）HTML 里嵌时间戳/nonce，每次抓取 sha256 都变，去重对它们失效，会每天重复存一份（约 90 KB/天）。marclou 这类高价值源去重正常。
+- 抓取只做原样快照，不做任何分析/抽取，CI 内不调用 LLM；把快照变成 `data/*.json` 的结构化分析由人在本地完成。
+
 ## 约定
 
 - **证据分级**：A 独立可核验 / B 本人披露 / C 第三方转述 / D 无收入证据（禁止宣传「年入百万/千万」）。
