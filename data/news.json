@@ -4,8 +4,8 @@
     "date": "2026-09",
     "type": "政策",
     "title": "X 原 Creator Revenue Sharing 已结束，改为 Original Content Rewards",
-    "summary": "平台分成制度换代，新规则禁止无原创贡献的复制拼贴与违规自动生成内容。依赖「老马的收益」这条渠道的创作者需重新评估商业模式地基。",
-    "source_url": "https://raw.githubusercontent.com/AIPMAndy/chinese-x-creators/main/methodology/evidence-standard.md",
+    "summary": "平台分成制度换代，新规则禁止无原创贡献的复制拼贴与违规自动生成内容。依赖「平台分成」这条渠道的创作者需重新评估商业模式地基。",
+    "source_type": "开源案例库方法论文件",
     "evidence_grade": "B",
     "tags": ["平台政策", "X", "平台分成"]
   },
@@ -14,90 +14,90 @@
     "date": "2026-11-04",
     "type": "情报",
     "title": "案例库核查：不存在已独立认证的个人年净所得千万级样本",
-    "summary": "AIPMAndy/chinese-x-creators 于 2026-11-04 复核 62 个原有来源后明确：29 位创作者、14 条收入主张中，经独立验证的个人年净收入千万创作者为 0 位，证据等级最高只到 B（本人自述）。",
-    "source_url": "https://raw.githubusercontent.com/AIPMAndy/chinese-x-creators/main/README.md",
+    "summary": "某开源中文 X 创作者收入案例库于 2026-11-04 复核 62 个原有来源后明确：29 位创作者、14 条收入主张中，经独立验证的个人年净收入千万创作者为 0 位，证据等级最高只到 B（本人自述）。",
+    "source_type": "开源案例库 README",
     "evidence_grade": "A",
     "tags": ["证据基线", "案例库", "核查"]
   },
   {
-    "id": "news-yuwen-fde-pricing",
+    "id": "news-c01-fde-pricing",
     "date": "2026-08-26",
     "type": "情报",
-    "title": "余温公开企业 AI 交付客单价：一个项目 3、5 万很正常",
+    "title": "案例 #01 公开企业 AI 交付客单价：一个项目 3、5 万很正常",
     "summary": "「会搭 Agent 的人很多，但能交付的人才能赚企业的钱」——企业愿意付几万元，买的是能接进业务、出了问题还能继续修的交付结果。这是本轮调研里客单价最高、且不依赖流量的一条路径。",
-    "source_url": "https://jxxy.net/ai/articles/agent-delivery-enterprise/",
+    "source_type": "本人长文自述",
     "evidence_grade": "B",
-    "tags": ["企业交付", "FDE", "客单价", "余温"]
+    "tags": ["企业交付", "FDE", "客单价"]
   },
   {
-    "id": "news-yuwen-offline-retro",
+    "id": "news-c01-offline-retro",
     "date": "2026-06-08",
     "type": "情报",
-    "title": "余温复盘：跑了几十家线下客户后，真正能落地的 AI 和推特讨论的不是同一个东西",
-    "summary": "推特上跑的几乎都是 self-prompt、demo、vibe coding 截图；而线下落地验证的不是技术先进性，而是交付能力。信号是 AI 创业圈开始从「叙事竞争」回到「交付竞争」。",
-    "source_url": "https://github.com/leavingme/x-news-wiki",
+    "title": "案例 #01 复盘：跑了几十家线下客户后，真正能落地的 AI 和线上讨论的不是同一个东西",
+    "summary": "线上跑的几乎都是 self-prompt、demo、vibe coding 截图；而线下落地验证的不是技术先进性，而是交付能力。信号是 AI 创业圈开始从「叙事竞争」回到「交付竞争」。",
+    "source_type": "本人 X 复盘",
     "evidence_grade": "B",
-    "tags": ["企业落地", "交付竞争", "余温"]
+    "tags": ["企业落地", "交付竞争"]
   },
   {
-    "id": "news-yuwen-crossplatform-data",
+    "id": "news-c01-crossplatform-data",
     "date": "2026-05-21",
     "type": "数据",
-    "title": "余温公布国内首条视频 24 小时跨平台数据：公众号 2.6w 浏览/+900 粉，B 站 20 浏览/0 粉",
-    "summary": "公众号（社交裂变）≫ 抖音 3000/+30 ≈ 小红书 3000/+70 ≫ B 站 20/0。生产 SOP = AI 写稿 → 配 PPT → 自拍 → 加字幕 → 立刻发；他自评成片「讲正确的废话、一股营销味」但照样发。",
-    "source_url": "https://x.com/gkxspace/status/2057459518485729454",
+    "title": "案例 #01 公布国内首条视频 24 小时跨平台数据：公众号 2.6w 浏览/+900 粉，B 站 20 浏览/0 粉",
+    "summary": "公众号（社交裂变）≫ 抖音 3000/+30 ≈ 小红书 3000/+70 ≫ B 站 20/0。生产 SOP = AI 写稿 → 配 PPT → 自拍 → 加字幕 → 立刻发；自评成片「讲正确的废话、一股营销味」但照样发。",
+    "source_type": "本人 X 公开数据",
     "evidence_grade": "B",
-    "tags": ["跨平台分发", "内容生产", "余温", "实测数据"]
+    "tags": ["跨平台分发", "内容生产", "实测数据"]
   },
   {
-    "id": "news-yuwen-40x-ab-test",
+    "id": "news-c01-40x-ab-test",
     "date": "2026-06-01",
     "type": "数据",
-    "title": "余温本人 A/B 对照：同一份干货，加情绪钩子后浏览量差 40 倍",
-    "summary": "同一个 CLAUDE.md 技巧，他发 2.6 万浏览，别人写「每次回复时都叫我【老公】」发 100 万+。他的结论：「能让人停下来互动的内容现在推特最牛逼的内容。」",
-    "source_url": "https://x.com/gkxspace/status/2061438613766705250",
+    "title": "案例 #01 本人 A/B 对照：同一份干货，加情绪钩子后浏览量差 40 倍",
+    "summary": "同一个技巧，他发 2.6 万浏览，别人加了情绪钩子发 100 万+。他的结论：「能让人停下来互动的内容现在推特最牛逼的内容。」",
+    "source_type": "本人 X 公开自述",
     "evidence_grade": "B",
-    "tags": ["内容公式", "情绪钩子", "A/B 对照", "余温"]
+    "tags": ["内容公式", "情绪钩子", "A/B 对照"]
   },
   {
-    "id": "news-marclou-shipfast-decline",
+    "id": "news-c13-shipfast-decline",
     "date": "2026-11-15",
     "type": "数据",
-    "title": "Marc Lou 公开矩阵：卖代码模板的 ShipFast 跌到 $897/mo，卖问责社群的 Ship or Die 达 $16,422/mo",
-    "summary": "43 个产品、$1,253,630/12 个月、0 员工 0 投资 90% 利润率。两大现金牛是 TrustMRR（$28,706/mo，把透明度做成产品）与 DataFast（$28,444/mo）。方向性转变：教育业务重心从卖代码模板转向卖问责制/社群/挑战。",
-    "source_url": "https://marclou.com/",
+    "title": "案例 #13 公开矩阵：卖代码模板的产品跌到 $897/mo，卖问责社群的达 $16,422/mo",
+    "summary": "43 个产品、$1,253,630/12 个月、0 员工 0 投资 90% 利润率。两大现金牛是把透明度做成产品的收入数据库与收入归因分析（各约 $28K/mo）。方向性转变：教育业务重心从卖代码模板转向卖问责制/社群/挑战。",
+    "source_type": "本人官网公开 dashboard",
     "evidence_grade": "B",
-    "tags": ["产品矩阵", "MRR", "Marc Lou", "方向转变"]
+    "tags": ["产品矩阵", "MRR", "方向转变"]
   },
   {
-    "id": "news-weijunext-90-customers",
+    "id": "news-c12-90-customers",
     "date": "2025-08-06",
     "type": "情报",
-    "title": "weijunext 公开复盘：Nexty.dev 100 天内从零到 90 位付费客户",
-    "summary": "打法 = 免费开源资产（Next.js 中文文档 nextjscn.org、开源周刊模板、落地页模板）+ 大量教程/翻译积累信任 → 导向付费模板 + build in public 公开客户数。证明中文技术圈「开源 → 付费」闭环真实存在，尽管案例库把这一类全标为 D 级未证实。",
-    "source_url": "https://weijunext.com/",
+    "title": "案例 #12 公开复盘：主打全栈模板 100 天内从零到 90 位付费客户",
+    "summary": "打法 = 免费开源资产（框架中文文档站、开源周刊模板、落地页模板）+ 大量教程/翻译积累信任 → 导向付费模板 + build in public 公开客户数。证明中文技术圈「开源 → 付费」闭环真实存在，尽管案例库把这一类全标为 D 级未证实。",
+    "source_type": "本人官网 + 复盘文标题",
     "evidence_grade": "B",
-    "tags": ["开源漏斗", "付费转化", "weijunext", "反例验证"]
+    "tags": ["开源漏斗", "付费转化", "反例验证"]
   },
   {
     "id": "news-geo-paper-findings",
     "date": "2026-11-15",
     "type": "情报",
     "title": "GEO 实测：加引语 +40.9%、加数字 +30.6% 最有效，关键词堆砌 −8.3% 有害",
-    "summary": "KDD'24 论文 arXiv:2311.09735 九法对照。反直觉发现：GEO 对低排名小站收益巨大（Rank-5 +97%~+115%），对头部站是稀释（Rank-1 −20%~−30%）——在 AI 答案里，独立开发者的机会比在 Google 排名里平等得多。",
-    "source_url": "https://arxiv.org/abs/2311.09735",
+    "summary": "KDD'24 论文 arXiv:2311.09735 九法对照。反直觉发现：GEO 对低排名小站收益巨大（Rank-5 +97%~+115%），对头部站是稀释（Rank-1 −20%~−30%）——在 AI 答案里，独立开发者的机会比在搜索引擎排名里平等得多。",
+    "source_type": "学术论文",
     "evidence_grade": "A",
     "tags": ["GEO", "获客", "论文", "小站红利"]
   },
   {
-    "id": "news-yuwen-bracelet-luck",
+    "id": "news-c01-bracelet-luck",
     "date": "2026-06",
     "type": "情报",
-    "title": "余温自述 AI 玄学手链：一周赚了十几万，「但那基本是运气，风口一过啥也没了」",
-    "summary": "链路 = 海外爆款找灵感 → 抖音问垂类博主合规与需求 → AI 搭站 → 1688 小批量 → 带货主播分佣。价值在于示范低成本短周期验证生意，不在于可复制的收入。同帖自述「上个月利润到了 10w+」。",
-    "source_url": "https://x.com/gkxspace/status/2063978203639652377",
+    "title": "案例 #01 自述某次轻资产电商：一周赚了十几万，「但那基本是运气，风口一过啥也没了」",
+    "summary": "链路 = 海外爆款找灵感 → 向垂类博主打听合规与需求 → AI 搭站 → 1688 小批量 → 带货主播分佣。价值在于示范低成本短周期验证生意，不在于可复制的收入。同帖自述「上个月利润到了 10w+」。",
+    "source_type": "本人 X 公开自述",
     "evidence_grade": "B",
-    "tags": ["轻资产电商", "风口", "余温", "诚实自述"]
+    "tags": ["轻资产电商", "风口", "诚实自述"]
   },
   {
     "id": "news-douyin-alliance-tiered-fee",
@@ -105,18 +105,18 @@
     "type": "政策",
     "title": "抖音精选联盟起分级费率新规，不再统一 10% 扣费",
     "summary": "带货分佣的平台规则变动。⚠️ 分佣比例本身仍无一手官方数据，市面流传的 10%–50% 与 5%–15% 两个口径均为自媒体来源且互相冲突。",
-    "source_url": null,
+    "source_type": "平台规则变动（自媒体转述）",
     "evidence_grade": "C",
     "tags": ["平台政策", "抖音", "带货分佣"]
   },
   {
-    "id": "news-yihui-skillry-snapshot",
+    "id": "news-c07-skillry-snapshot",
     "date": "2026-10",
     "type": "数据",
-    "title": "熠辉公开 Skillry 收入快照：近 30 天 $12,037、MRR $3,918",
-    "summary": "两个口径不能相加或互相替换。⚠️ 2026-11-04 案例库复核时源站 TwKit 仅返回加载页，本周无法重证，库方不升级其年度收入。",
-    "source_url": "https://twkit.io/longform",
+    "title": "案例 #07 公开单款 SaaS 收入快照：近 30 天 $12,037、MRR $3,918",
+    "summary": "两个口径不能相加或互相替换。⚠️ 案例库 2026-11-04 复核时源站仅返回加载页，本周无法重证，库方不升级其年度收入。",
+    "source_type": "本人公开收入快照",
     "evidence_grade": "B",
-    "tags": ["MRR", "Build in Public", "熠辉", "无法重证"]
+    "tags": ["MRR", "Build in Public", "无法重证"]
   }
 ]

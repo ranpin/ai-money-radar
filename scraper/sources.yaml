@@ -45,11 +45,11 @@ sources:
     url: "https://hn.algolia.com/api/v1/search?query=vibe%20coding&tags=story&hitsPerPage=30"
     desc: HN 搜索 - vibe coding
 
-  # ---- 博主个人站（HTML 快照；marclou 的 MRR 每 30 天滚动，是核心收入时间序列源）----
+  # ---- 博主个人站（HTML 快照；某 solo 站点的 MRR 每 30 天滚动，是核心收入时间序列源）----
   - id: marclou
     type: html
     url: https://marclou.com/
-    desc: Marc Lou 产品矩阵与实时 MRR（每 30 天滚动更新，核心收入时间序列源）
+    desc: 某海外 solo 开发者产品矩阵与实时 MRR（每 30 天滚动更新，核心收入时间序列源）
 
   - id: datafast
     type: html
@@ -59,7 +59,7 @@ sources:
   - id: weijunext
     type: html
     url: https://weijunext.com/
-    desc: Weijunext 博客（独立开发与出海变现实践）
+    desc: 某中文独立开发者博客（独立开发与出海变现实践）
 
   # ---- 工具定价页（HTML 快照）----
   - id: cursor_pricing

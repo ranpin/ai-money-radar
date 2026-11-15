@@ -43,8 +43,8 @@
     "affiliate": null,
     "public_mrr": null,
     "pricing_asof": "2026-11-15",
-    "evidence": "一手转录（余温长文）",
-    "notes": "「每天 30 美金额度，一个月 900 美金」。余温自述与老板见过面、「确实是有反代，但不会掺假」。⚠️ 第三方中转有封号/掺假风险。配套：AigoCode、PackyAPI（按量）、CC-Switch（一键切换）、RelayPulse（测评站）。"
+    "evidence": "一手转录（案例 #01 长文）",
+    "notes": "「每天 30 美金额度，一个月 900 美金」。案例 #01 自述与老板见过面、「确实是有反代，但不会掺假」。⚠️ 第三方中转有封号/掺假风险。配套：AigoCode、PackyAPI（按量）、CC-Switch（一键切换）、RelayPulse（测评站）。"
   },
   {
     "id": "lovable",
@@ -109,7 +109,7 @@
     "public_mrr": null,
     "pricing_asof": "2026-11-15",
     "evidence": "一手（官方定价页）",
-    "notes": "余温推荐的那套 GTM 工具（强推断）。BYOK 所有套餐均不消耗积分；数据插件 ≈0.01–0.1 积分/次；卖点是不登录你的社媒账号、无封号风险。⚠️ 官网称接入 30+ 数据源但只点名 Semrush，未见 Similarweb / Ahrefs / DataForSEO。兑换码 DETHINK2026。"
+    "notes": "案例 #01 推荐的那套 GTM 工具（强推断）。BYOK 所有套餐均不消耗积分；数据插件 ≈0.01–0.1 积分/次；卖点是不登录你的社媒账号、无封号风险。⚠️ 官网称接入 30+ 数据源但只点名 Semrush，未见 Similarweb / Ahrefs / DataForSEO。兑换码 DETHINK2026。"
   },
   {
     "id": "datafast",
@@ -125,7 +125,7 @@
     "users": 28297,
     "pricing_asof": "2026-11-15",
     "evidence": "一手（官方定价页 + 创始人公开 dashboard）",
-    "notes": "Marc Lou 产品。收入归因分析（流量 × Stripe 打通）。14 天免费试用、无需信用卡。有 MCP server + CLI，可接入 Cursor / Claude Code / Codex。Starter 定位 solo founders。"
+    "notes": "案例 #13 的产品。收入归因分析（流量 × Stripe 打通）。14 天免费试用、无需信用卡。有 MCP server + CLI，可接入 Cursor / Claude Code / Codex。Starter 定位 solo founders。"
   },
   {
     "id": "zsxq",
@@ -141,7 +141,7 @@
     "public_mrr": null,
     "pricing_asof": "2026-11-15",
     "evidence": "一手",
-    "notes": "适合长期付费社群。年收入超 10 万后比小报童划算。余温的社群不走这里（微信制 399 元/永久，省掉抽成但无平台流量）。"
+    "notes": "适合长期付费社群。年收入超 10 万后比小报童划算。案例 #01 的社群不走这里（微信制 399 元/永久，省掉抽成但无平台流量）。"
   },
   {
     "id": "xiaobaotong",
@@ -180,7 +180,7 @@
     "public_mrr": null,
     "pricing_asof": "2026-11-15",
     "evidence": "一手",
-    "notes": "⭐ 是 MoR（Merchant of Record），代缴全球税——出海首选，省心。weijunext 的出海教程也用它。"
+    "notes": "⭐ 是 MoR（Merchant of Record），代缴全球税——出海首选，省心。案例 #12 的出海教程也用它。"
   },
   {
     "id": "gumroad",

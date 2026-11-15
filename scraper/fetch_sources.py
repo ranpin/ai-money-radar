@@ -8,7 +8,7 @@
   - 所有快照 gzip 压缩（HTML 约 10x）。
   - 内容哈希去重：与 raw/state.json 里该源上次的 sha256 比对，
     内容没变就不落新文件、只在 manifest 记 "unchanged"。
-    这样 marclou/定价页这类很少变的源不会每天重复占空间，
+    这样个人站/定价页这类很少变的源不会每天重复占空间，
     仓库体积 ≈ 只在内容真正变化时增长。
 
 输出布局（日期为 UTC）：
@@ -18,7 +18,7 @@
 
 用法：
     python3 scraper/fetch_sources.py                          # 抓全部源，写 raw/<今天 UTC>/
-    python3 scraper/fetch_sources.py --sources marclou,hn_mrr # 调试：只抓指定源
+    python3 scraper/fetch_sources.py --sources datafast,hn_mrr # 调试：只抓指定源
     python3 scraper/fetch_sources.py --date 2026-11-15        # 指定快照目录日期
     python3 scraper/fetch_sources.py --out-dir /tmp/x         # 调试：改输出根目录
 """

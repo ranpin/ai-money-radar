@@ -264,7 +264,7 @@ def build_cases():
     btns = "".join(btn_parts)
 
     cards = []
-    for c in sorted(cases, key=lambda x: (x.get("evidence_grade") or "Z", x["name"])):
+    for c in sorted(cases, key=lambda x: (x.get("evidence_grade") or "Z", x["id"])):
         cl = [CLAIM_BY_ID[i] for i in c.get("claim_ids", []) if i in CLAIM_BY_ID]
         claim_rows = "".join(
             f"""<tr><td>{e(x['amount_display'])}</td><td>{e(x['period'])}</td><td>{e(x['caliber'])}</td>
@@ -281,13 +281,13 @@ def build_cases():
         )
         actions = "".join(f"<li>{e(a)}</li>" for a in c.get("actions", []))
         quotes = "".join(f"<li>「{e(q)}」</li>" for q in c.get("key_quotes", []))
-        srcs = "".join(f'<li><a href="{e(s)}">{e(s.replace("https://", ""))[:60]}</a></li>' for s in c.get("sources", []))
+        src_type = e(c.get("source_type") or "—")
         aud = f'{c["audience"]:,}' if c.get("audience") else "未披露"
 
         cards.append(f"""<details class="card" data-type="{e(c['type'])}" id="{e(c['id'])}" style="display:block">
 <summary>
-  <span style="font-weight:700">{e(c['name'])}</span>
-  <span class="mono small muted">{e(c.get('handle') or '—')}</span>
+  <span class="badge b">{e(c['code'])}</span>
+  <span style="font-weight:700">{e(c['archetype'])}</span>
   {grade_badge(c.get('evidence_grade'))}
   <span class="badge plain">{e(c['type'])}</span>
   <span class="badge plain">{e(c.get('region') or '')}</span>
@@ -303,7 +303,7 @@ def build_cases():
   {f'<h3>关键原话</h3><ul>{quotes}</ul>' if quotes else ''}
   {f'<p class="small"><b>备注：</b>{e(c["notes"])}</p>' if c.get('notes') else ''}
   {f'<h3>口径限制与风险</h3><ul class="small">{limits}</ul>' if limits else ''}
-  {f'<h3>来源</h3><ul class="small">{srcs}</ul>' if srcs else ''}
+  <p class="small"><b>来源类型：</b>{src_type}　<span class="muted">（为保护隐私不附个人主页/帖子链接）</span></p>
 </div>
 </details>""")
 
@@ -358,7 +358,7 @@ def build_plays():
         steps = "".join(f"<li>{e(s)}</li>" for s in p.get("steps", []))
         risks = "".join(f"<li>{e(r)}</li>" for r in p.get("risks", []))
         reps = "、".join(
-            f'<a href="cases.html#{e(r)}">{e(CASE_BY_ID[r]["name"])}</a>' if r in CASE_BY_ID else e(r)
+            f'<a href="cases.html#{e(r)}">{e(CASE_BY_ID[r]["code"])}</a>' if r in CASE_BY_ID else e(r)
             for r in p.get("representatives", [])
         ) or "—"
         tc = "、".join(p.get("toolchain", [])) or "—"
@@ -448,7 +448,7 @@ def build_insights():
     attr_named = Counter(attr_label.get(k, k) for k in attr_dist.elements())
 
     rows = "".join(
-        f"""<tr><td><a href="cases.html#{e(CASE_BY_ID[c['case_id']]['id'])}">{e(CASE_BY_ID[c['case_id']]['name'])}</a></td>
+        f"""<tr><td><a href="cases.html#{e(CASE_BY_ID[c['case_id']]['id'])}">{e(CASE_BY_ID[c['case_id']]['code'])}</a></td>
 <td class="num">{e(c['amount_display'])}</td><td>{e(c['currency'] or '—')}</td><td>{e(c['period'])}</td>
 <td>{e(c['subject'])}</td><td class="small">{e(c['caliber'])}</td>
 <td>{grade_badge(c['evidence_grade'])}</td><td class="small mono">{e(c['x_attribution'])}</td></tr>"""
@@ -468,7 +468,7 @@ def build_insights():
 <h2 id="attribution">X 归因分布</h2>
 <div class="bars">{bars(attr_named, total)}</div>
 <div class="box warn"><div class="t">X 几乎从不直接产生收入</div>
-<p>{total} 条主张里，本人明确归因于 X 的只有 <b>{attr_dist.get('creator_claimed', 0)} 条</b>。Jacky Chou 案例的反事实原文：「若移除 X，SEO、服务、联盟和短租仍可能带来收入；缺少渠道对照，不能把总收入归因于 X。」⇒ <b>X 是信任与获客前端，不是收入来源本身。</b></p></div>
+<p>{total} 条主张里，本人明确归因于 X 的只有 <b>{attr_dist.get('creator_claimed', 0)} 条</b>。案例 #14 的反事实原文：「若移除 X，SEO、服务、联盟和短租仍可能带来收入；缺少渠道对照，不能把总收入归因于 X。」⇒ <b>X 是信任与获客前端，不是收入来源本身。</b></p></div>
 
 <h2>收入主体分布</h2>
 <div class="bars">{bars(subj_dist, total)}</div>
@@ -501,6 +501,10 @@ def build_about():
 <h2>定位</h2>
 <p>{e(SITE['name_zh'])}（{e(SITE['name'])}）追踪「用 AI 赚钱」的真实信号：案例、产品、打法与收入主张。板块设计参考 <a href="https://theroboradar.com/">theroboradar.com</a> 的情报库形态（资讯/公司/产品/技术/资本/人物 → 情报流/案例库/工具库/打法图谱/收入洞察），<b>内容全部自建，不复制其数据、设计与品牌</b>。</p>
 
+<h2>隐私处理说明</h2>
+<p>{e(meta['privacy']['body'])}</p>
+<ul>{''.join(f'<li>{e(r)}</li>' for r in meta['privacy']['rules'])}</ul>
+
 <h2>证据分级</h2>
 <p>沿用开源案例库 <a href="https://github.com/AIPMAndy/chinese-x-creators">AIPMAndy/chinese-x-creators</a> 的标准。最高原则：<b>千万级企业经营结果 ≠ 千万级 X 内容收入 ≠ 创作者个人年净收入。</b></p>
 <div class="tbl-wrap"><table><thead><tr><th>等级</th><th>含义</th><th>限制</th></tr></thead><tbody>{grade_rows}</tbody></table></div>
@@ -510,7 +514,7 @@ def build_about():
 
 <h2>标注纪律</h2>
 <ul>
-<li>每条关键信息标注来源 URL，并区分 <b>一手</b>（本人原话）/ <b>二手</b>（第三方转述）/ <b>推断</b>（分析）</li>
+<li>每条关键信息标注<b>来源类型</b>（本人 X 自述 / 本人官网 / 播客访谈 / 第三方案例库），并区分 <b>一手</b>（本人原话）/ <b>二手</b>（第三方转述）/ <b>推断</b>（分析）；为保护隐私不附指向个人主页/帖子的链接</li>
 <li>找不到的信息明确写「未找到公开信息」，<b>不用行业常识或合理猜测填充数字</b></li>
 <li>价格、费率、佣金比例这类数字必须有来源</li>
 <li>单个来源抓取失败就换来源，不反复重试</li>
@@ -518,14 +522,14 @@ def build_about():
 
 <h2>数据来源与更新机制</h2>
 <p><b>半自动</b>：GitHub Actions 每日定时抓取原始数据快照到 <code>raw/&lt;日期&gt;/</code>（只抓不分析，CI 内不调用任何 LLM），分析与结构化由人在本地完成后写入 <code>data/*.json</code>，再构建发布。</p>
-<p>当前抓取源：GitHub 案例库（<code>creators.json</code> / <code>revenue_claims.json</code>）、Hacker News Algolia API、博主个人站（marclou.com / weijunext.com 等）、工具定价页（Cursor / Lovable / bolt.new / v0 / DataFast）。</p>
+<p>当前抓取源：GitHub 案例库（<code>creators.json</code> / <code>revenue_claims.json</code>）、Hacker News Algolia API、博主个人站（若干，案例已匿名处理）、工具定价页（Cursor / Lovable / bolt.new / v0 / DataFast）。</p>
 <p><b>不可达来源</b>（不尝试）：X/推特（反爬）、Product Hunt（需 auth）、小红书（需登录）。</p>
 
 <h2>双层结构</h2>
 <p>本站是<b>公开脱敏层</b>：只放对他人也有价值且无风险的内容（工具定价、平台费率、变现模式分类、案例的证据分级拆解）。不含任何人的微信号等 PII、不含带追踪参数的返佣链接、不含人身指向的批判性措辞、不含站主个人的变现策略与收支记账——那些留在私有研究仓 <code>ai-monetization-lab</code>。</p>
 
 <h2>差异化</h2>
-<p>同类情报站通常只笼统写「汇集全球行业媒体报道」，不声明是否人工审核。本站<b>每条收入主张都带证据等级 + 口径标注 + 来源链接 + 限制条款</b>，并在首页直接挂出「A 级证据 = 0 条」。这既是诚实，也是这类站最缺的公信力。</p>
+<p>同类情报站通常只笼统写「汇集全球行业媒体报道」，不声明是否人工审核。本站<b>每条收入主张都带证据等级 + 口径标注 + 来源类型 + 限制条款</b>，并在首页直接挂出「A 级证据 = 0 条」。这既是诚实，也是这类站最缺的公信力。</p>
 
 <h2>免责声明</h2>
 <div class="box err"><p>{e(SITE['disclaimer'])}</p>
