@@ -1,10 +1,10 @@
 {
   "bolt_pricing": {
     "bytes": 123373,
-    "date": "2026-11-15",
-    "file": "2026-11-15/bolt_pricing.html.gz",
-    "gz_bytes": 26291,
-    "sha256": "654d0769d7cb735b2c7410d5e553d132cebe2da623686d86e4d899133504f4cd"
+    "date": "2026-11-16",
+    "file": "2026-11-16/bolt_pricing.html.gz",
+    "gz_bytes": 26292,
+    "sha256": "4e8d028c987260ca798a76d6bcb10ea52a53bc64472bfa6ccc1760231c38f4d4"
   },
   "cursor_pricing": {
     "bytes": 332593,
@@ -15,59 +15,59 @@
   },
   "datafast": {
     "bytes": 292231,
-    "date": "2026-11-15",
-    "file": "2026-11-15/datafast.html.gz",
-    "gz_bytes": 43834,
-    "sha256": "d81597ad6ac688b7f9e9d7a43051b2fb35a98566b6be84348c00e2c7a74fb8c9"
+    "date": "2026-11-16",
+    "file": "2026-11-16/datafast.html.gz",
+    "gz_bytes": 43832,
+    "sha256": "8e695de51381bdc416d3adb66b9dc93006f1670fc939bced19a6cde42d02e419"
   },
   "hn_ai_money": {
-    "bytes": 41362,
-    "date": "2026-11-15",
-    "file": "2026-11-15/hn_ai_money.json.gz",
-    "gz_bytes": 8593,
-    "sha256": "ec83cfd5b87a1e998300420d696f651d7cd3d81db826bc7cd9a7190638c5f55b"
+    "bytes": 41431,
+    "date": "2026-11-16",
+    "file": "2026-11-16/hn_ai_money.json.gz",
+    "gz_bytes": 8620,
+    "sha256": "977b48d3e8e8912589af9328e6bf30045f37f330e95bc7effeba99926c072a02"
   },
   "hn_indie_revenue": {
-    "bytes": 88459,
-    "date": "2026-11-15",
-    "file": "2026-11-15/hn_indie_revenue.json.gz",
-    "gz_bytes": 20115,
-    "sha256": "5c647a0bb6f5ae8c8c0aa165bd3ab186f949e19f74dc0ca8b738b708a74f8421"
+    "bytes": 88531,
+    "date": "2026-11-16",
+    "file": "2026-11-16/hn_indie_revenue.json.gz",
+    "gz_bytes": 20144,
+    "sha256": "43b55f164fea84927c8d2871ce7201599a40c6a3635361b18c42584d67b30c3e"
   },
   "hn_mrr": {
-    "bytes": 44999,
-    "date": "2026-11-15",
-    "file": "2026-11-15/hn_mrr.json.gz",
-    "gz_bytes": 11422,
-    "sha256": "11ccad877877333a1011014ebdd0b6d94ec41497b0e8700fade3a66ed200ed4f"
+    "bytes": 44938,
+    "date": "2026-11-16",
+    "file": "2026-11-16/hn_mrr.json.gz",
+    "gz_bytes": 11405,
+    "sha256": "2e085e4adf2f912cae93895910ad61f42c034c9dfcac0a01abc4793f7fc5feba"
   },
   "hn_vibe_coding": {
-    "bytes": 37957,
-    "date": "2026-11-15",
-    "file": "2026-11-15/hn_vibe_coding.json.gz",
-    "gz_bytes": 9933,
-    "sha256": "18a40b6d054387160552a9dba46da0f806d1cf92f90db4d329c58819504fcaed"
+    "bytes": 37966,
+    "date": "2026-11-16",
+    "file": "2026-11-16/hn_vibe_coding.json.gz",
+    "gz_bytes": 9935,
+    "sha256": "4efdda26bc598895adfd8dc03bf3fe421e5d48f5bc5f47df253856bd3690c876"
   },
   "lovable_pricing": {
-    "bytes": 198423,
-    "date": "2026-11-15",
-    "file": "2026-11-15/lovable_pricing.html.gz",
-    "gz_bytes": 29946,
-    "sha256": "c260c55909a405512a7ac2df31acd14c65667b351be367023b4b2188dc15fa6b"
+    "bytes": 198642,
+    "date": "2026-11-16",
+    "file": "2026-11-16/lovable_pricing.html.gz",
+    "gz_bytes": 29972,
+    "sha256": "002e5babe2f400af5102c17a5be914ff361296b8e809e9ad75d896874d6431c5"
   },
   "marclou": {
-    "bytes": 658217,
-    "date": "2026-11-15",
-    "file": "2026-11-15/marclou.html.gz",
-    "gz_bytes": 67286,
-    "sha256": "628eec8dd0e4993a6224799a4c5d73312455653f91e28a7ce0abe75ff3de5a1a"
+    "bytes": 660637,
+    "date": "2026-11-16",
+    "file": "2026-11-16/marclou.html.gz",
+    "gz_bytes": 67543,
+    "sha256": "d1263cbc537f08f9ff4d210cb7c42aebf3ddb39adedd1123d9eb866ac8d567ee"
   },
   "v0_pricing": {
     "bytes": 271995,
-    "date": "2026-11-15",
-    "file": "2026-11-15/v0_pricing.html.gz",
-    "gz_bytes": 32530,
-    "sha256": "8edd950b004ba83c37bd17fc4aa241a2a416fc73bb403887c3cbbfa079ebe0cb"
+    "date": "2026-11-16",
+    "file": "2026-11-16/v0_pricing.html.gz",
+    "gz_bytes": 32526,
+    "sha256": "469bc912a98105787a7ccc4fe42aa67504f24b5d530c8761f080b8eb4a4b9677"
   },
   "weijunext": {
     "bytes": 108649,
