@@ -1,73 +1,73 @@
 {
   "bolt_pricing": {
-    "bytes": 122197,
-    "date": "2026-11-21",
-    "file": "2026-11-21/bolt_pricing.html.gz",
-    "gz_bytes": 26446,
-    "sha256": "36ffe44bccd96abc90e5f65cfdf34140ffdbeed823d7f6e3f45b427e1dd7678a"
+    "bytes": 178667,
+    "date": "2026-11-22",
+    "file": "2026-11-22/bolt_pricing.html.gz",
+    "gz_bytes": 29359,
+    "sha256": "ca52f3659b5b6310218ccd31935b7251cbdd8b7430ba4937537e47ccc2f389bf"
   },
   "cursor_pricing": {
-    "bytes": 332199,
-    "date": "2026-11-21",
-    "file": "2026-11-21/cursor_pricing.html.gz",
-    "gz_bytes": 42549,
-    "sha256": "db2d6cb92f873209cc9a1c2f8b2c7d7a7a8b7ee95ea76caa47e0ee5b54565783"
+    "bytes": 332593,
+    "date": "2026-11-22",
+    "file": "2026-11-22/cursor_pricing.html.gz",
+    "gz_bytes": 42619,
+    "sha256": "021d588efaa63ed3a8cb2e1bdfdbdd26bc330f69a94975761cd9d2ae8724d1bc"
   },
   "datafast": {
     "bytes": 292231,
-    "date": "2026-11-21",
-    "file": "2026-11-21/datafast.html.gz",
+    "date": "2026-11-22",
+    "file": "2026-11-22/datafast.html.gz",
     "gz_bytes": 43834,
-    "sha256": "fd5913d06d5d3a0611b1db7afd326ccb1a41b7f3067088aa130b9a0a1d81cde4"
+    "sha256": "55969d02fd16d0c7480ca5062461629c87b1e9e0a75a31adbbfc875b7a836637"
   },
   "hn_ai_money": {
-    "bytes": 41489,
-    "date": "2026-11-21",
-    "file": "2026-11-21/hn_ai_money.json.gz",
-    "gz_bytes": 8652,
-    "sha256": "b7b88b22c7001d37296fc70548f6e3a9f487c503f85c2736993d4cea977ee6c4"
+    "bytes": 41430,
+    "date": "2026-11-22",
+    "file": "2026-11-22/hn_ai_money.json.gz",
+    "gz_bytes": 8635,
+    "sha256": "3d66619aac263e6b603042872f9e1baa4c1ae436dd8acd28fef630dabde4303b"
   },
   "hn_indie_revenue": {
-    "bytes": 88542,
-    "date": "2026-11-21",
-    "file": "2026-11-21/hn_indie_revenue.json.gz",
-    "gz_bytes": 20148,
-    "sha256": "34d9a5bf933633b59b64236f62e0162dccf1d960764f6d644115865265682856"
+    "bytes": 88470,
+    "date": "2026-11-22",
+    "file": "2026-11-22/hn_indie_revenue.json.gz",
+    "gz_bytes": 20120,
+    "sha256": "c859e9959f01602cd5595132ed6443b0f5f9d8c6b325da907a797392d66d557b"
   },
   "hn_mrr": {
-    "bytes": 44998,
-    "date": "2026-11-21",
-    "file": "2026-11-21/hn_mrr.json.gz",
-    "gz_bytes": 11422,
-    "sha256": "8d74a6506f07885e5618128232eb2a378b4c08ed3d69c835c0fd5a25fc6e25e5"
+    "bytes": 44936,
+    "date": "2026-11-22",
+    "file": "2026-11-22/hn_mrr.json.gz",
+    "gz_bytes": 11406,
+    "sha256": "98c20af466cbd42304929269ae8af23a4ca0d8b649f52e0688717131b11d0d16"
   },
   "hn_vibe_coding": {
-    "bytes": 38110,
-    "date": "2026-11-21",
-    "file": "2026-11-21/hn_vibe_coding.json.gz",
-    "gz_bytes": 9994,
-    "sha256": "3e2019c2b29dc83cb1a6800ee68c400fddd21285d962567b04245d16677d76dc"
+    "bytes": 37772,
+    "date": "2026-11-22",
+    "file": "2026-11-22/hn_vibe_coding.json.gz",
+    "gz_bytes": 9862,
+    "sha256": "43fcb7f366aea4d01b13c68490cabdc5b6eb5629c376f6ff4cf4bfaaed94af72"
   },
   "lovable_pricing": {
     "bytes": 315278,
-    "date": "2026-11-21",
-    "file": "2026-11-21/lovable_pricing.html.gz",
-    "gz_bytes": 55589,
-    "sha256": "d43a21b9a27ce7bfbea0c82d418b9991016d7e4b5afbe59ba948b0630bec23fc"
+    "date": "2026-11-22",
+    "file": "2026-11-22/lovable_pricing.html.gz",
+    "gz_bytes": 55588,
+    "sha256": "33f5bdd944bfe9ee807a7e67a6fbbd3f3228131ea9e3e77bb9edaa6445b8064b"
   },
   "marclou": {
-    "bytes": 664471,
-    "date": "2026-11-21",
-    "file": "2026-11-21/marclou.html.gz",
-    "gz_bytes": 68031,
-    "sha256": "7bf9f34cc5d93d9a90651031ee708c998adefda7c985619fe446cd5a7dcb7ff9"
+    "bytes": 664937,
+    "date": "2026-11-22",
+    "file": "2026-11-22/marclou.html.gz",
+    "gz_bytes": 67849,
+    "sha256": "e0ade2b04375216d32e8eaba386856fea23660c6f65feb6869a556a9f4c3845e"
   },
   "v0_pricing": {
     "bytes": 273505,
-    "date": "2026-11-21",
-    "file": "2026-11-21/v0_pricing.html.gz",
-    "gz_bytes": 32874,
-    "sha256": "c9c6e9e4fbed8623a45a8f44983671b0b905c7921a20ded4023211e0313da078"
+    "date": "2026-11-22",
+    "file": "2026-11-22/v0_pricing.html.gz",
+    "gz_bytes": 32876,
+    "sha256": "50b5723644d69195eaa38fb1ffd4eaeefbbaca9864873e7aadcbce9bb5d7ad18"
   },
   "weijunext": {
     "bytes": 108649,
